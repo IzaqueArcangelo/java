@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Soma de dois números</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:outputLabel value="Valor A: "/>
+		<h:inputText required="true" requiredMessage="Insira um valor para A" value="#{caculadoraMB.a}"/>
+		<h:outputLabel value="Valor B: "/>
+		<h:inputText required="true" requiredMessage="Insira um valor para B" value="#{caculadoraMB.b}"/>
+		
+		<h:commandButton action="#{caculadoraMB.soma}" value="calcula"/>
+		
+		<h:outputLabel value="Resultado: "/>
+		<h:outputText value="#{caculadoraMB.resultado}"/>
+	</h:form>
+</h:body>
+</html>
